@@ -1,0 +1,5 @@
+usd_rates_job:
+  cron: "0 1 * * *"
+  class: "GetRatesJob"
+  queue: default
+  active_job: true

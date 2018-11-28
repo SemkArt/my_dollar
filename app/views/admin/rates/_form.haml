@@ -1,0 +1,14 @@
+.row.mt-5
+  .col-4.offset-4
+    .card
+      .card-header Установить новый курс
+      .card-body
+        = form_for(@rate, url: admin_rates_path) do |f|
+          .form-group
+            = f.label :value, 'Значение:'
+            = f.text_field :value, class: 'form-control'
+          .form-group
+            = f.label :forced_to, 'Лимит времени:'
+            = f.text_field :forced_to, class: 'form-control'
+          .pull-right.text-center
+            %input.btn.btn-primary{type: 'submit', value: 'Сохранить'}

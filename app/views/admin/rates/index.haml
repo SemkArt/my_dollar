@@ -1,0 +1,29 @@
+.page-header.row.my-4
+  .col-6
+    %h1.h2
+      Курсы валют
+      %small (#{@rates.size})
+
+  .col-6.text-right
+    %a{href: '/'} На главную
+
+
+%table.table
+  %thead.thead-light
+    %tr
+      %th ID
+      %th Type
+      %th Value
+      %th Forced to
+      %th Created at
+
+  %tbody
+    - @rates.each do |rate|
+      %tr
+        %td= rate.id
+        %td= rate.class.name.demodulize
+        %td= rate.value
+        %td= rate.forced_to && l(rate.forced_to)
+        %td= l(rate.created_at)
+
+= render 'form'

@@ -1,0 +1,17 @@
+en:
+  number:
+    currency:
+      format:
+        unit: 'руб'
+        delimiter: ','
+        separator: '.'
+        precision: 0
+        format: '%n %u'
+
+  date:
+    formats:
+      default: "%d.%m.%Y"
+
+  time:
+    formats:
+      default: "%d.%m.%Y, %H:%M"

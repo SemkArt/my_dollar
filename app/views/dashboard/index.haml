@@ -1,0 +1,19 @@
+.card
+  .card-header Курс доллара США
+  .card-body.text-center
+    - if @rate
+      %h1
+        %span.badge.badge-warning#currentValue= @rate&.value
+      %small.text-secondary= l Time.zone.now
+
+    - else
+      %p.text-secondary.text-center Текущий курс не установлен.
+
+.text-center.mt-3
+  %a.card-link{href: '/admin'} Устновить
+
+- content_for :js do
+  :javascript
+    $(function () {
+      usd.ratesFetcher.initFetcher();
+    });

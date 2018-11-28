@@ -1,0 +1,17 @@
+{
+  "name": "my_dollar",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "3.4",
+    "actioncable": "^5.1.6",
+    "jquery": "3.3.1",
+    "jquery-ui": "^1.12.1",
+    "jquery-ujs": "1.2.2",
+    "bootstrap": "4.0.0",
+    "npm": "^5.7.1",
+    "popper.js": "1.12.9"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "2.11.2"
+  }
+}
