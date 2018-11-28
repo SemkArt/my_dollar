@@ -1,4 +1,4 @@
-# README
+# README [![Build Status](https://travis-ci.com/SemkArt/my_dollar.svg?branch=master)](https://travis-ci.com/SemkArt/my_dollar)
 
 The application uses sidekiq for background job execution to load the current US dollar 
 exchange rate and the ActionCable for instant updates of all rates on opened pages.
